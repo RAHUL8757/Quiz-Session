@@ -1,0 +1,132 @@
+<!Doctype html>
+<html>
+<head>
+<title>Simple Quiz</title>
+<link rel="stylesheet" href="CSS.css">
+<script src="JavaScript.js"></script>
+</head>
+<body>
+<div id="container">
+<header><h1>Simple Quiz In c programing language</h1>
+<p>Test your kwonleage in c programing</p>
+</header>
+<section>
+
+<form name="QuizForm" onsubmit="return SubmitAnswer()">
+<h3>1. What is the output of the below code snippet?</h3>
+<h5>#include<stdio.h><br>
+
+main() <br>
+{<br>
+   unsigned x = 5, y=&x, *p = y+0; <br>
+
+   printf("%u",*p);<br>
+}<br>
+</h5><br>
+
+<input type="radio" name="q1"value="a"id="q1a"/>a. Address of x<br/>
+<input type="radio" name="q1"value="b"id="q1b"/>b. Address of y<br/>
+<input type="radio" name="q1"value="c"id="q1c"/>c. Address of p<br/>
+<input type="radio" name="q1"value="d"id="q1d"/>d. 5 <br/>
+<h3>2.  What is the size of ‘int’?</h3><br>
+<input type="radio" name="q2"value="a"id="q2a"/>a. 2<br/>
+<input type="radio" name="q2"value="b"id="q2b"/>b. 4<br/>
+<input type="radio" name="q2"value="c"id="q2c"/>c. 8<br/>
+<input type="radio" name="q2"value="d"id="q2d"/>d. Compiler dependent <br/>
+<h3>3. Identify the invalid constant used in fseek() function as ‘whence’ reference.</h3><br>
+<input type="radio" name="q3"value="a"id="q3a"/>a. SEEK_SET<br/>
+<input type="radio" name="q3"value="b"id="q3b"/>b. SEEK_CUR<br/>
+<input type="radio" name="q3"value="c"id="q3c"/>c. SEEK_BEG<br/>
+<input type="radio" name="q3"value="d"id="q3d"/>d. SEEK_END <br/>
+<h3>4. What is the output of the following program?</h3>
+<h5>#include<stdio.h><br>
+
+int x = 5;<br>
+int* f() <br>
+{<br>
+   return &x;<br>
+}<br>
+main()<br>
+{	<br>
+   *f() = 10;<br>
+   
+   printf("%d", x);<br>
+}<br></h5>
+<input type="radio" name="q4"value="a"id="q4a"/>a. Compile error<br/>
+<input type="radio" name="q4"value="b"id="q4b"/>b. Runtime error<br/>
+<input type="radio" name="q4"value="c"id="q4c"/>c. 10 <br/>
+<input type="radio" name="q4"value="d"id="q4d"/>d. 5 <br/>
+<h3>5. C is the successor of ___ programming language.</h3><br>
+<input type="radio" name="q5"value="a"id="q5a"/>a. C++<br/>
+<input type="radio" name="q5"value="b"id="q5b"/>b. B++<br/>
+<input type="radio" name="q5"value="c"id="q5c"/>c. B<br/>
+<input type="radio" name="q5"value="d"id="q5d"/>d. Mini C <br/>
+<h3>6. How to round-off a value “5.77” to 6.0?</h3><br>
+<input type="radio" name="q6"value="a"id="q6a"/>a. ceil(5.77) <br/>
+<input type="radio" name="q6"value="b"id="q6b"/>b. round-off(5.77) <br/>
+<input type="radio" name="q6"value="c"id="q6c"/>c. round-up(5.77) <br/>
+<input type="radio" name="q6"value="d"id="q6d"/>d. floor(5.77) <br/>
+<h3>7. Which library functions help users to dynamically allocate memory?</h3><br>
+<input type="radio" name="q7"value="a"id="q7a"/>a. memalloc()and alloc() <br/>
+<input type="radio" name="q7"value="b"id="q7b"/>b. malloc() and memalloc() <br/>
+<input type="radio" name="q7"value="c"id="q7c"/>c. malloc() and calloc() <br/>
+<input type="radio" name="q7"value="d"id="q7d"/>d. memalloc() and calloc() <br/>
+<h3>8. fgets() function is safer than gets() because in fgets() function you can specify the size of the buffer into which the supplied string will be stored.</h3><br>
+<input type="radio" name="q8"value="a"id="q8a"/>a. True<br/>
+<input type="radio" name="q8"value="b"id="q8b"/>b.  False<br/>
+<h3>9. What will be the resultant of the given below program?</h3>
+<h5>#include<stdio.h><br>
+#include<stdarg.h><br>
+
+Void fun(char *msg, ...);<br>
+int main()<br>
+{<br>
+   fun("IndiaMAX", 1, 4, 7, 11, 0);<br>
+   return 0;<br>
+}<br>
+   void fun(char *msg, ...)  <br>
+{<br>
+va_list ptr;{<br>
+   int num;<br>
+   va_start(ptr, msg);<br>
+   num = va_arg(ptr, int);  <br>  
+   num = va_arg(ptr, int);<br>
+   printf("%d", num);<br>
+}<br></h5>
+<input type="radio" name="q9"value="a"id="q9a"/>a. IndiaMAX 1, 7, 11, 0 <br/>
+<input type="radio" name="q9"value="b"id="q9b"/>b. IndiaMAX 1, 7 <br/>
+<input type="radio" name="q9"value="c"id="q9c"/>c.  Only 4 <br/>
+<input type="radio" name="q9"value="d"id="q9d"/>d.  1, 7, 11, 0 <br/>
+<h3>10. If, the given below code finds the length of the string then what will be the length?</h3>
+<h5>
+#include<stdio.h><br>
+
+int xstrlen(char *s)<br>
+{
+   int length = 0;<br>
+   
+   while(*s!='\0')<br>
+   {length++; s++;}<br>
+   return (length);<br>
+}<br>
+   int main()<br>
+{<br>
+   char d[] = "IndiaMAX";<br>
+    
+   printf("Length = %d\n", xstrlen(d));<br>
+   return 0;<br>
+}<br>
+</h5>
+
+<input type="radio" name="q10"value="a"id="q10a"/>a. Code returns error<br/>
+<input type="radio" name="q10"value="b"id="q10b"/>b. Code returns the length 8<br/>
+<input type="radio" name="q10"value="c"id="q10c"/>c. Code returns the length 6<br/>
+<input type="radio" name="q10"value="d"id="q10d"/>d. Code returns the length 2<br/>
+<br/><br/>
+<input type="submit" value="submit Answer">
+<div id="results"></div>
+</form>
+</section>
+</div>
+</body>
+</html>

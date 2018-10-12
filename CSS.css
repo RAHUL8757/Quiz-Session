@@ -1,0 +1,40 @@
+body{
+	background: red;
+	color:white;
+	font-family:'arial',sans-serif;
+	font-size:16px;
+}
+#container{
+	width:60%;
+	background:#199fdb;
+	margin:20px auto;
+	padding:25px;
+}
+header{
+	text-align:center;
+	border-bottom:#fff dashed 1px;
+}
+header p{
+	padding:0px;
+	margin-top:5px;
+	color:#000;
+}
+section{
+	min-height:400px;
+}
+input[type='submit']{
+	background:#f06226;
+	border:0px;
+	color:#fff;
+}
+#results h3{
+	background:#f06226;
+	padding:10px;
+	margin:10px;
+}
+#results span{
+	color:#000;
+	font-weight:bold;
+}
+	
+	
